@@ -1,0 +1,14 @@
+.header {
+  background-color: #C4C4C4;
+  height: 500px;
+}
+
+.header-wrapper {
+  width: 1216px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
