@@ -1,3 +1,66 @@
+@font-face {
+  font-family: "graphic-regular";
+  src: url("../fonts/Graphik-Regular.woff") format("woff"), url("../fonts/Graphik-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "graphic-medium";
+  src: url("../fonts/Graphik-Medium.woff") format("woff"), url("../fonts/Graphik-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "graphic-bold";
+  src: url("../fonts/Graphik-Bold.woff") format("woff"), url("../fonts/Graphik-Bold.woff2") format("woff2");
+}
+
+.h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-size: bold;
+}
+
+.h2 {
+  font-size: 32px;
+  line-height: 40px;
+  font-size: bold;
+}
+
+.h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-size: medium;
+}
+
+.h4 {
+  font-size: 18px;
+  line-height: 28px;
+  font-size: medium;
+}
+
+.p-lead {
+  font-size: 24px;
+  line-height: 32px;
+  font-size: regular;
+}
+
+.big-p {
+  font-size: 18px;
+  line-height: 28px;
+  font-size: regular;
+}
+
+.main-p {
+  font-size: 16px;
+  line-height: 24px;
+  font-size: regular;
+}
+
+.alt-text {
+  font-size: 14px;
+  line-height: 20px;
+  font-size: regular;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -371,6 +434,8 @@ template {
 }
 
 .header-wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,20 +457,16 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 0;
-  margin-bottom: 0;
-}
-
-.logo-img {
-  padding: 0;
 }
 
 .logo-image {
   width: 40px;
   height: 40px;
+  overflow: hidden;
 }
 
 .logo-name {
+  font-family: "graphic-medium";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,6 +478,14 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 24px;
+}
+
+.logo-name__last {
+  color: #1B1B1B;
+}
+
+.logo-name__first {
+  color: #7D7D7D;
 }
 
 .burger {
