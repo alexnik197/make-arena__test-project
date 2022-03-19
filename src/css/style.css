@@ -6,59 +6,55 @@
 @font-face {
   font-family: "graphic-medium";
   src: url("../fonts/Graphik-Medium.woff") format("woff"), url("../fonts/Graphik-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "graphic-bold";
   src: url("../fonts/Graphik-Bold.woff") format("woff"), url("../fonts/Graphik-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 
 .h1 {
   font-size: 48px;
   line-height: 56px;
-  font-size: bold;
 }
 
 .h2 {
   font-size: 32px;
   line-height: 40px;
-  font-size: bold;
 }
 
 .h3 {
   font-size: 24px;
   line-height: 32px;
-  font-size: medium;
 }
 
 .h4 {
   font-size: 18px;
   line-height: 28px;
-  font-size: medium;
 }
 
 .p-lead {
   font-size: 24px;
   line-height: 32px;
-  font-size: regular;
 }
 
 .big-p {
   font-size: 18px;
   line-height: 28px;
-  font-size: regular;
 }
 
 .main-p {
   font-size: 16px;
   line-height: 24px;
-  font-size: regular;
 }
 
 .alt-text {
   font-size: 14px;
   line-height: 20px;
-  font-size: regular;
 }
 
 * {
@@ -67,8 +63,21 @@
 }
 
 body {
-  font-family: arial;
+  font-family: "graphic-regular";
   -webkit-font-smoothing: antialiased;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 img {
@@ -77,6 +86,16 @@ img {
 
 .button {
   cursor: pointer;
+}
+
+.container {
+  width: 1216px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -434,6 +453,7 @@ template {
 }
 
 .header-wrapper {
+  width: 1216px;
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -445,8 +465,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1216px;
-  border: 2px solid red;
 }
 
 .logo {
@@ -492,4 +510,81 @@ template {
   cursor: pointer;
   width: 32px;
   height: 10px;
+}
+
+.first-block {
+  background-color: #0066FF;
+  height: 8000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper {
+  width: 904px;
+}
+
+.menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 312px;
+  height: 100vh;
+}
+
+.menu-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-value {
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: #7D7D7D;
+}
+
+.menu-value:hover {
+  font-family: "graphic-bold";
+  color: #1B1B1B;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.menu-value__first {
+  color: #3E29E3;
 }

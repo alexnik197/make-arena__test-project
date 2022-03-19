@@ -1,0 +1,29 @@
+.content
+    display: flex
+    justify-content: center
+.wrapper
+    width: 904px
+.menu
+    position: sticky
+    top: 0
+    display: flex
+    justify-content: start
+    width: 312px
+    height: 100vh
+    &-block
+        display: flex
+        justify-content: center
+    &-list
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &-value
+        margin-bottom: 16px
+        text-decoration: none
+        color: $font-gray
+        &:hover
+            font-family: "graphic-bold"
+            color: $font-black
+            transition-duration: .5s
+        &__first
+            color: #3E29E3
