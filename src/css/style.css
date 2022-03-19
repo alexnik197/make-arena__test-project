@@ -20,41 +20,58 @@
 .h1 {
   font-size: 48px;
   line-height: 56px;
+  margin: 0;
+  margin-bottom: 0;
+  font-family: "graphic-bold";
 }
 
 .h2 {
   font-size: 32px;
   line-height: 40px;
+  margin: 0;
+  font-family: "graphic-bold";
 }
 
 .h3 {
   font-size: 24px;
   line-height: 32px;
+  margin: 0;
+  font-family: "graphic-medium";
 }
 
 .h4 {
   font-size: 18px;
   line-height: 28px;
+  margin: 0;
+  font-family: "graphic-medium";
 }
 
 .p-lead {
   font-size: 24px;
   line-height: 32px;
+  margin: 0;
+  font-family: "graphic-regular";
 }
 
 .big-p {
   font-size: 18px;
   line-height: 28px;
+  margin: 0;
+  font-family: "graphic-regular";
 }
 
 .main-p {
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
+  font-family: "graphic-regular";
 }
 
 .alt-text {
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+  font-family: "graphic-regular";
 }
 
 * {
@@ -63,7 +80,6 @@
 }
 
 body {
-  font-family: "graphic-regular";
   -webkit-font-smoothing: antialiased;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -443,7 +459,6 @@ template {
 
 .header {
   height: 104px;
-  background-color: #C4C4C4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,17 +527,6 @@ template {
   height: 10px;
 }
 
-.first-block {
-  background-color: #0066FF;
-  height: 8000px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,10 +537,12 @@ template {
 }
 
 .wrapper {
+  border: 2px solid blue;
   width: 904px;
 }
 
 .menu {
+  height: 100vh;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -547,16 +553,10 @@ template {
       -ms-flex-pack: start;
           justify-content: start;
   width: 312px;
-  height: 100vh;
 }
 
 .menu-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-top: 184px;
 }
 
 .menu-list {
@@ -587,4 +587,158 @@ template {
 
 .menu-value__first {
   color: #3E29E3;
+}
+
+.greeting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-top: 16px;
+  margin-bottom: 80px;
+}
+
+.greeting__title {
+  margin-bottom: 16px;
+}
+
+.greeting__level {
+  margin-bottom: 64px;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.grid__title {
+  margin-bottom: 24px;
+}
+
+.grid__description {
+  margin-bottom: 48px;
+}
+
+.grid-screen {
+  margin-bottom: 64px;
+}
+
+.grid-screen__title {
+  margin-bottom: 32px;
+}
+
+.grid-screen__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.grid-screen__element-name {
+  color: #7D7D7D;
+  margin-bottom: 8px;
+}
+
+.grid-screen__param {
+  margin-bottom: 48px;
+}
+
+.grid-screen-image {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .header-wrapper {
+    width: 960px;
+  }
+  .container {
+    width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-wrapper {
+    width: 720px;
+  }
+  .container {
+    width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-wrapper {
+    width: 576px;
+  }
+  .container {
+    width: 576px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-wrapper {
+    width: 320px;
+  }
+  .container {
+    width: 320px;
+  }
+  .menu {
+    display: none;
+  }
+  .h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+  }
+  .h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin: 0;
+  }
+  .h3 {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+  }
+  .h4 {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+  }
+  .p-lead {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+  }
+  .big-p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+  }
+  .main-p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+  .alt-text {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
 }

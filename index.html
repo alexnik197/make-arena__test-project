@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/css/style.css">
     <title>Тестовое задание - Make Arena</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-wrapper">
+    <header class="header row">
+        <div class="header-wrapper col-lg-12">
             <div class="logo">
                 <div class="logo-img"><img class="logo-image" src="src/img/logoMy.svg" alt="Logotype"></div>
                 <div class="logo-name">
@@ -26,7 +27,6 @@
     <div class="content">
         <div class="container">
             <div class="menu">
-                <a href="#" class="menu-btn"></a>
                 <div class="menu-block">
                     <nav class="menu-list">
                         <a href="#" class="menu-value alt-text menu-value__first">Напутственное слово</a>
@@ -38,10 +38,117 @@
             </div>
             <!-- /.menu -->
             <div class="wrapper">
-                <div class="first-block">
-                    <h1 class="h1">Тестовое задание</h1>
+                <div class="greeting row">
+                    <div class="col-lg-8">
+                        <h1 class="greeting__title h1">Тестовое задание</h1>
+                        <h2 class="greeting__level p-lead">Уровень: junior</h2>
+                        <p class="main-p">Привет! Твоё тестовое задание — грамотно заверстать эту прекрасную страничку. В шапке страницы укажи своё ФИО, так всем будет удобнее. В менюхе под иконкой бургером мы хотели бы также видеть твои данные. Ну что, поехали?</p>
+                    </div>
                 </div>
-                <!-- /.first-block -->
+                <!-- /.greeting-block -->
+                <div class="grid row">
+                    <div class="col-lg-8">
+                        <h1 class="grid__title h1">Сетка</h1>
+                        <p class="grid__description main-p">Задание предполагает адаптивную вёрстку. Используется 3 состояния в зависимости от устройства. Сетка «резиновая» — переменной ширины.</p>
+                    </div>
+                    <div class="grid-screen">
+                        <h3 class="h3 grid-screen__title">Десктоп (1200+)</h3>
+                        <div class="grid-screen__param row">
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <div class="grid-screen__element">
+                                    <span class="alt-text grid-screen__element-name">Контент</span>
+                                    <span class="p-lead">1072–1312</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <div class="grid-screen__element">
+                                    <span class="alt-text grid-screen__element-name">Колонок</span>
+                                    <span class="p-lead">12</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <div class="grid-screen__element">
+                                    <span class="alt-text grid-screen__element-name">Ширина колонки</span>
+                                    <span class="p-lead">60-80</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <div class="grid-screen__element">
+                                    <span class="alt-text grid-screen__element-name">Межколонник</span>
+                                    <span class="p-lead">32</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- grid-screen__param -->
+                        <img class="screen-image" src="src/img/pic_desktop.png" alt="image desktop">
+                    </div>
+                    <!-- grid-desktop -->
+                    <div class="grid-screen">
+                        <h3 class="h3 grid-screen__title">Планшет (736+)</h3>
+                        <div class="grid-screen__param row">
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <div class="grid-screen__element">
+                                    <span class="alt-text grid-screen__element-name">Контент</span>
+                                    <span class="p-lead">672–928</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <div class="grid-screen__element">
+                                    <span class="alt-text grid-screen__element-name">Колонок</span>
+                                    <span class="p-lead">8</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <div class="grid-screen__element">
+                                    <span class="alt-text grid-screen__element-name">Ширина колонки</span>
+                                    <span class="p-lead">60-80</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <div class="grid-screen__element">
+                                    <span class="alt-text grid-screen__element-name">Межколонник</span>
+                                    <span class="p-lead">32</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- grid-screen__param -->
+                        <img class="screen-image" src="src/img/pic_tab.png" alt="image tablet">
+                    </div>
+                    <!-- grid-tab -->
+                    <div class="grid-screen">
+                        <h3 class="h3 grid-screen__title">Десктоп (1200+)</h3>
+                        <div class="grid-screen__param row">
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <div class="grid-screen__element">
+                                    <span class="alt-text grid-screen__element-name">Контент</span>
+                                    <span class="p-lead">296–424</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <div class="grid-screen__element">
+                                    <span class="alt-text grid-screen__element-name">Колонок</span>
+                                    <span class="p-lead">4</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <div class="grid-screen__element">
+                                    <span class="alt-text grid-screen__element-name">Ширина колонки</span>
+                                    <span class="p-lead">60-80</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <div class="grid-screen__element">
+                                    <span class="alt-text grid-screen__element-name">Межколонник</span>
+                                    <span class="p-lead">24</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- grid-screen__param -->
+                        <img class="screen-image" src="src/img/pic_mob.png" alt="image mobile">
+                    </div>
+                    <!-- grid-mobile -->
+                </div>
+                <!-- /.grid -->
             </div>
             <!-- /.wrapper -->
         </div>
