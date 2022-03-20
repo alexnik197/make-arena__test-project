@@ -20,11 +20,42 @@
                 </div>
             </div>
             <!-- logo -->
-            <div class="burger"><img src="src/img/ico-burger.svg" alt="burger button"></div>
+            <div class="burger" data-toggle="modal"><img src="src/img/ico-burger.svg" alt="burger button"></div>
         </div>
         <!-- header-wrapper -->
     </header>
     <!-- header -->
+    <div class="modal-window">
+        <img class="modal-window__image" src="src/img/Modal-bckgr.png" alt="background image">
+        <div class="modal-wrapper">
+            <div class="modal-menu">
+                <div class="modal-menu__icon">
+                    <img class="logo-image" src="src/img/logoMy.svg" alt="Logotype">
+                </div>
+                <div class="modal-menu__main">
+                    <div class="modal-menu__wrap">
+                        <span class="modal-menu__main-complete alt-text">Задание выполнил</span>
+                        <div class="myName">
+                            <h2 class="h2">Никифоров</h2>
+                            <div class="myName-first">
+                                <h2 class="h2">Алексей</h2>
+                                <h2 class="h2"> Алексеевич</h2>
+                            </div>
+                        </div>
+                        <p class="modal-menu__main-description p-main">Две вышки; 3 года работы по профессии геолога. Имею опыт сдачи срочных проектов как в одиночку, так и с коллективом. Движусь в направлении Front-end. Люблю сферу айти и стремлюсь в неё профессионально переквалифицироваться. Всегда обучаюсь новому, открыт к возможностям. Дружно помогаю компании становиться лучше 😉</p>
+                        <p class="modal-menu__main-phone big-p">+7(999) 649-30-97</p>
+                    </div>
+                    <!-- /.modal-menu__wrap -->
+                    <div class="social">
+                        <a href="https://vk.com/alexnik197"><button class="social-btn"><img src="/src/img/social.svg" alt="social"></button></a>
+                        <a  class="social-link" href="https://vk.com/alexnik197"><span class="social-link__text main-p">Ссылка на соцсеть/мессенджер</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-close"><a href="#" class="modal-close__button"><img src="src/img/ico_menu_close.svg" alt="close"></a></div>
+        </div>
+    </div>
+    <!-- /.modal -->
     <div class="content">
         <div class="container">
             <div class="menu">
@@ -156,12 +187,12 @@
                         <p class="typography__description main-p">Используется шрифт Graphik. На телефонах стили типографики переопределяются</p>
                     </div>
                     <div class="typography-links">
-                        <a href="#" class="h3 typography-links__button">Десктоп</a>
-                        <a href="#" class="h3 typography-links__button">Телефон</a>
+                        <a class="h3 typography-links__button typo-link--1">Десктоп</a>
+                        <a class="h3 typography-links__button typo-link--2">Телефон</a>
                     </div>
                         <!-- typography-links -->
                         <hr class="typography-line">
-                    <div class="typography-menu">
+                    <div class="typography-menu--1">
                         <div class="typography-menu__wrapper row">
                             <span class="typography-menu__wrapper-param alt-text col-lg-4">Заголовок H1, 48/56, bold</span>
                             <h1 class="typography-menu__wrapper-example typography-menu__wrapper-example--1 h1 col-lg-8">Текст заголовка</h1>
@@ -191,7 +222,42 @@
                             <span class="typography-menu__wrapper-example typography-menu__wrapper-example--7 main-p col-lg-8">Основной текст</span>
                         </div>
                         <div class="typography-menu__wrapper--last row">
-                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Впомогательный текст P_14, 14/20, regular</span>
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Вспомогательный текст P_14, 14/20, regular</span>
+                            <span class="typography-menu__wrapper-example typography-menu__wrapper-example--8 alt-text col-lg-8">Вспомогательный текст</span>
+                        </div>
+                    </div>
+                    <!-- typography-menu -->
+                    <div class="typography-menu--2 typography-menu--hide">
+                        <div class="typography-menu__wrapper row">
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Заголовок H1, 32/40, bold</span>
+                            <h1 class="typography-menu__wrapper-example typography-menu__wrapper-example--1 h1 col-lg-8">Текст заголовка</h1>
+                        </div>
+                        <div class="typography-menu__wrapper row">
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Заголовок H2, 28/36, bold</span>
+                            <h2 class="typography-menu__wrapper-example typography-menu__wrapper-example--2 h2 col-lg-8">Текст заголовка</h2>
+                        </div>
+                        <div class="typography-menu__wrapper row">
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Заголовок H3, 20/28, medium</span>
+                            <h3 class="typography-menu__wrapper-example typography-menu__wrapper-example--3 h3 col-lg-8">Текст заголовка</h3>
+                        </div>
+                        <div class="typography-menu__wrapper row">
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Заголовок H4, 18/28, medium</span>
+                            <h4 class="typography-menu__wrapper-example typography-menu__wrapper-example--4 h4 col-lg-8">Текст заголовка</h4>
+                        </div>
+                        <div class="typography-menu__wrapper row">
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Лид P_Lead, 20/28, regularr</span>
+                            <span class="typography-menu__wrapper-example typography-menu__wrapper-example--5 p-lead col-lg-8">Текст лида</span>
+                        </div>
+                        <div class="typography-menu__wrapper row">
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Крупный текст P_18, 18/28, regular</span>
+                            <span class="typography-menu__wrapper-example typography-menu__wrapper-example--6 big-p col-lg-8">Крупный текст</span>
+                        </div>
+                        <div class="typography-menu__wrapper row">
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Основной текст P_16, 16/24, regular</span>
+                            <span class="typography-menu__wrapper-example typography-menu__wrapper-example--7 main-p col-lg-8">Основной текст</span>
+                        </div>
+                        <div class="typography-menu__wrapper--last row">
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Вспомогательный текст P_14, 14/20, regular</span>
                             <span class="typography-menu__wrapper-example typography-menu__wrapper-example--8 alt-text col-lg-8">Вспомогательный текст</span>
                         </div>
                     </div>
@@ -386,6 +452,8 @@
     <script src="src/js/jquery-3.6.0.min.js"></script>
     <!-- <script src="src/js/bootstrap.min.js"></script> -->
     <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/typography.js"></script>
     <script src="src/js/droplist.js"></script>
+    <script src="src/js/modal.js"></script>
 </body>
 </html>

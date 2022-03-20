@@ -1,0 +1,85 @@
+.modal-window
+    position: relative
+    display: flex
+    justify-content: center
+    position: fixed
+    width: 1216px
+    height: 100vh
+    top: 0
+    bottom: 0
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    border: 2px solid red
+    &--visible
+        visibility: visible
+        opacity: 1
+    &__image
+        width: 100%
+        object-fit: cover
+.modal
+    &-wrapper
+        border: 2px solid blue
+        position: absolute
+        display: flex
+        justify-content: space-between
+        padding: 8px
+        width: 100%
+        height: 100%
+    &-close
+        top: 28px
+        right: 60px
+        position: absolute
+    &-menu
+        display: flex
+        flex-direction: row
+        background-color: #fff
+        width: 760px
+        height: 100%
+        &__icon
+            margin: 24px 64px 0px 56px
+        &__main
+            margin-top: 32px
+            padding-bottom: 40px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            &-complete
+                color: $font-gray
+            &-description
+                max-width: 384px
+                margin-bottom: 32px
+            &-phone
+                font-family: "graphic-medium"
+        &__wrap
+            display: flex
+            flex-direction: column
+.myName
+    display: flex
+    flex-direction: column
+    margin-top: 60px
+    margin-bottom: 24px
+    &-first
+        display: flex
+        flex-direction: row
+        gap: 10px
+.social
+    display: flex
+    flex: row
+    align-items: center
+    &-btn
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 48px
+        height: 48px
+        border-radius: 50%
+        background-color: #fff
+        border: none
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08)
+        margin-right: 24px
+    &-link
+        text-decoration: none
+        &__text
+            color: #3E29E3
+            font-family: "graphic-medium"
