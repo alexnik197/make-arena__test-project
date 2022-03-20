@@ -1,0 +1,192 @@
+.ui
+    display: flex
+    flex-direction: column
+    justify-content: start
+    &__title
+        margin-bottom: 48px
+    &__subtitle
+        margin-bottom: 32px
+    &-forms
+        display: flex
+        flex-direction: column
+        &__hint
+            &--1
+                color: $font-gray
+                margin-bottom: 16px
+            &--2
+                color: $font-gray
+                margin-bottom: 4px
+            &--error
+                margin-bottom: 4px
+                font-size: 14px
+                line-height: 20px
+                color: #E80F3B
+        &__last
+            display: flex
+            flex-direction: column
+            margin-top: 48px
+            margin-bottom: 64px
+        &__three
+            display: flex
+            flex-direction: column
+    &-wrapper
+        display: flex
+        flex-direction: row
+        align-items: flex-end
+    &__description
+        margin-bottom: 32px
+.input
+    font-size: 16px
+    line-height: 24px
+    border: none
+    border-bottom: 2px solid #979797
+    cursor: pointer
+    padding-bottom: 6px
+    &:focus
+        outline: none !important
+    &:hover
+        border-bottom: 2px solid #3E29E3
+        transition-duration: .5s
+    &-error
+        border: none
+        border-bottom: 2px solid #979797
+        cursor: pointer
+        padding-bottom: 6px
+        &:focus
+            outline: none !important
+        &:hover
+            border-bottom: 4px solid #E80F3B
+            transition-duration: .5s
+    &-three
+        border: none
+        border-bottom: 2px solid #979797
+        cursor: pointer
+        padding-bottom: 6px
+        &:focus
+            outline: none !important
+        &:hover
+            border-bottom: 4px solid #3E29E3
+            transition-duration: .5s
+.dropdown
+    &-menu
+        border: none
+        width: 92%
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08)
+    &-item
+        &:hover
+            color: #fff
+            background-color: #3E29E3
+        &:active
+            background-color: #3E29E3
+        &:focus
+            background-color: transparent
+            color: #3E29E3
+.droplist
+    margin-bottom: 64px
+.btn
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-left: 0
+    padding-right: 0
+    border: none
+    background-color: transparent
+    color: $font-black
+    border-bottom: 2px solid #979797
+    &:hover
+        color: $font-black
+        border-bottom: 2px solid #3E29E3
+        background-color: transparent
+
+.buttons
+    margin-bottom: 64px
+    &-menu
+        display: flex
+        align-items: flex-end
+        &__wrapper
+            display: flex
+            flex-direction: column
+            &--last
+                margin-top: 32px
+            &-hint
+                color: $font-gray
+                margin-bottom: 24px
+            &-button
+                display: flex
+                align-items: center
+                justify-content: center
+                padding: 16px 32px 16px 32px
+                border: none
+                width: 50%
+                background: linear-gradient(45deg, #DD80ED 0%, #3D28E3 100%)
+                border-radius: 32px
+                font-family: "graphic-medium"
+                color: #fff
+                &--2
+                    &:hover
+                        background: linear-gradient(45deg, #80edad 0%, #28a8e3 100%)
+                &--3
+                    &:active
+                        background: linear-gradient(45deg, #80edad 0%, #28a8e3 100%)
+                &--last
+                    background: $font-gray
+                    color: #fff
+                    &:hover
+                        cursor: not-allowed
+
+.checkbox
+    margin-bottom: 64px
+.form-check
+    &-space
+        margin-bottom: 24px
+    &-input
+        &:checked
+            background-color: #3E29E3
+
+.accordion
+    margin-bottom: 160px
+    &-item
+        border: none
+    &-button
+        padding-left: 0
+        padding-right: 0
+        color: $font-black
+        font-family: "graphic-medium"
+        &:focus
+            color: #3E29E3
+            background-color: none
+            font-family: "graphic-medium"
+            color: $font-black
+        &:not(.collapsed)
+            background-color: #fff
+            color: #3E29E3
+            font-family: "graphic-medium"
+            &:after
+                background-image: url(/src/img/arrow.svg)
+                color: #3E29E3
+                font-family: "graphic-medium"
+        &:after
+            border: none
+            background-image: url(/src/img/arrow.svg)
+            color: #3E29E3
+            font-family: "graphic-medium"
+        &:active
+            color: red
+            color: #3E29E3
+            font-family: "graphic-medium"
+    &-body
+        padding-bottom: 30px
+        border-top: 1px solid #3E29E3
+        border-bottom: 2px solid #3E29E3
+        width: 100%
+        padding-left: 0px
+        margin-left: 2px
+    &-description
+        padding-left: 0px
+
+.end
+    display: flex
+    justify-content: center
+    align-items: center
+    &-text
+        font-family: "roboto"

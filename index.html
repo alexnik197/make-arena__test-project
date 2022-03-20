@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Тестовое задание - Make Arena</title>
 </head>
 <body>
@@ -30,9 +31,9 @@
                 <div class="menu-block">
                     <nav class="menu-list">
                         <a href="#" class="menu-value alt-text menu-value__first">Напутственное слово</a>
-                        <a href="#" class="menu-value alt-text">Сетка</a>
-                        <a href="#" class="menu-value alt-text">Типографика</a>
-                        <a href="#" class="menu-value alt-text">UI</a>
+                        <a href="#grid" class="menu-value alt-text">Сетка</a>
+                        <a href="#typography" class="menu-value alt-text">Типографика</a>
+                        <a href="#ui" class="menu-value alt-text">UI</a>
                     </nav>
                 </div>
             </div>
@@ -46,7 +47,7 @@
                     </div>
                 </div>
                 <!-- /.greeting-block -->
-                <div class="grid row">
+                <div class="grid row" id="grid">
                     <div class="col-lg-8">
                         <h1 class="grid__title h1">Сетка</h1>
                         <p class="grid__description main-p">Задание предполагает адаптивную вёрстку. Используется 3 состояния в зависимости от устройства. Сетка «резиновая» — переменной ширины.</p>
@@ -149,7 +150,7 @@
                     <!-- grid-mobile -->
                 </div>
                 <!-- /.grid -->
-                <div class="typography row">   
+                <div class="typography row" id="typography">   
                     <div class="col-lg-8">
                         <h1 class="typography__title h1">Типографика</h1>
                         <p class="typography__description main-p">Используется шрифт Graphik. На телефонах стили типографики переопределяются</p>
@@ -162,43 +163,218 @@
                         <hr class="typography-line">
                     <div class="typography-menu">
                         <div class="typography-menu__wrapper row">
-                            <div class="typography-menu__wrapper-param alt-text col-lg-4">Заголовок H1, 48/56, bold</div>
-                            <div class="typography-menu__wrapper-example typography-menu__wrapper-example--1 h1 col-lg-8">Текст заголовка</div>
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Заголовок H1, 48/56, bold</span>
+                            <h1 class="typography-menu__wrapper-example typography-menu__wrapper-example--1 h1 col-lg-8">Текст заголовка</h1>
                         </div>
                         <div class="typography-menu__wrapper row">
-                            <div class="typography-menu__wrapper-param alt-text col-lg-4">Заголовок H2, 32/40, bold</div>
-                            <div class="typography-menu__wrapper-example typography-menu__wrapper-example--2 h2 col-lg-8">Текст заголовка</div>
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Заголовок H2, 32/40, bold</span>
+                            <h2 class="typography-menu__wrapper-example typography-menu__wrapper-example--2 h2 col-lg-8">Текст заголовка</h2>
                         </div>
                         <div class="typography-menu__wrapper row">
-                            <div class="typography-menu__wrapper-param alt-text col-lg-4">Заголовок H3, 24/32, medium</div>
-                            <div class="typography-menu__wrapper-example typography-menu__wrapper-example--3 h3 col-lg-8">Текст заголовка</div>
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Заголовок H3, 24/32, medium</span>
+                            <h3 class="typography-menu__wrapper-example typography-menu__wrapper-example--3 h3 col-lg-8">Текст заголовка</h3>
                         </div>
                         <div class="typography-menu__wrapper row">
-                            <div class="typography-menu__wrapper-param alt-text col-lg-4">Заголовок H4, 18/28, medium</div>
-                            <div class="typography-menu__wrapper-example typography-menu__wrapper-example--4 h4 col-lg-8">Текст заголовка</div>
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Заголовок H4, 18/28, medium</span>
+                            <h4 class="typography-menu__wrapper-example typography-menu__wrapper-example--4 h4 col-lg-8">Текст заголовка</h4>
                         </div>
                         <div class="typography-menu__wrapper row">
-                            <div class="typography-menu__wrapper-param alt-text col-lg-4">Лид P_Lead, 24/32, regular</div>
-                            <div class="typography-menu__wrapper-example typography-menu__wrapper-example--5 p-lead col-lg-8">Текст лида</div>
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Лид P_Lead, 24/32, regular</span>
+                            <span class="typography-menu__wrapper-example typography-menu__wrapper-example--5 p-lead col-lg-8">Текст лида</span>
                         </div>
                         <div class="typography-menu__wrapper row">
-                            <div class="typography-menu__wrapper-param alt-text col-lg-4">Крупный текст P_18, 18/28, regular</div>
-                            <div class="typography-menu__wrapper-example typography-menu__wrapper-example--6 big-p col-lg-8">Крупный текст</div>
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Крупный текст P_18, 18/28, regular</span>
+                            <span class="typography-menu__wrapper-example typography-menu__wrapper-example--6 big-p col-lg-8">Крупный текст</span>
                         </div>
                         <div class="typography-menu__wrapper row">
-                            <div class="typography-menu__wrapper-param alt-text col-lg-4">Основной текст P_16, 16/24, regular</div>
-                            <div class="typography-menu__wrapper-example typography-menu__wrapper-example--7 main-p col-lg-8">Основной текст</div>
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Основной текст P_16, 16/24, regular</span>
+                            <span class="typography-menu__wrapper-example typography-menu__wrapper-example--7 main-p col-lg-8">Основной текст</span>
                         </div>
                         <div class="typography-menu__wrapper--last row">
-                            <div class="typography-menu__wrapper-param alt-text col-lg-4">Впомогательный текст P_14, 14/20, regular</div>
-                            <div class="typography-menu__wrapper-example typography-menu__wrapper-example--8 alt-text col-lg-8">Вспомогательный текст</div>
+                            <span class="typography-menu__wrapper-param alt-text col-lg-4">Впомогательный текст P_14, 14/20, regular</span>
+                            <span class="typography-menu__wrapper-example typography-menu__wrapper-example--8 alt-text col-lg-8">Вспомогательный текст</span>
                         </div>
                     </div>
                     <!-- typography-menu -->
                 </div>
                 <!-- /.typography -->
-                <div class="ui row">
-                    
+                <div class="ui" id="ui">
+                    <h1 class="ui__title h1">UI</h1>
+                    <h3 class="ui__subtitle h3">Текстовое поле</h3>
+                    <div class="ui-wrapper row">
+                        <div class="col-lg-4 ui-forms">
+                            <input class="input" type="text" placeholder="E-mail">
+                        </div>
+                        <div class="col-lg-4 ui-forms">
+                            <span class="ui-forms__hint--1 alt-text">Ховер</span>
+                            <input class="input" type="text" placeholder="E-mail">
+                        </div>
+                        <div class="col-lg-4 ui-forms__three">
+                            <span class="ui-forms__hint--1 alt-text">Ввод</span>
+                            <span class="ui-forms__hint--2 alt-text">E-mail</span>
+                            <input class="input-three" type="email" placeholder="E-mail">
+                        </div>
+                        <div class="col-lg-4 ui-forms__last">
+                            <span class="ui-forms__hint--1 alt-text">Ошибка</span>
+                            <span class="ui-forms__hint--error alt-text">E-mail</span>
+                            <input class="input-error" type="text" placeholder="officemake.st">
+                            <span class="ui-forms__hint--error alt-text">Текст ошибки</span>
+                        </div>
+                    </div>
+                    <!-- /.ui-wrapper -->
+                    <h3 class="ui__subtitle h3">Выпадающий список</h3>
+                    <p class="ui__description main-p">Компонент состоит из текстового поля и выпадающей подсказки</p>
+                    <div class="droplist row">
+                        <div class="dropdown dropdown-1 col-lg-4 col-sm-6 col-12">
+                            <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Выберите что-нибудь</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Первый стул</a></li>
+                                <li><a class="dropdown-item" href="#">Второй стул</a></li>
+                                <li><a class="dropdown-item" href="#">Выбранный пункт</a></li>
+                                <li><a class="dropdown-item" href="#">Теорема Эскобара</a></li>
+                            </ul>
+                        </div>
+                        <!-- dropdown -->
+                        <div class="dropdown dropdown-2 col-lg-4 col-sm-6 col-12">
+                            <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Выберите что-нибудь</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Первый стул</a></li>
+                                <li><a class="dropdown-item" href="#">Второй стул</a></li>
+                                <li><a class="dropdown-item" href="#">Выбранный пункт</a></li>
+                                <li><a class="dropdown-item" href="#">Теорема Эскобара</a></li>
+                            </ul>
+                        </div>
+                        <!-- dropdown -->
+                        <div class="dropdown dropdown-3 col-lg-4 col-sm-6 col-12">
+                            <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Выберите что-нибудь</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Первый стул</a></li>
+                                <li><a class="dropdown-item" href="#">Второй стул</a></li>
+                                <li><a class="dropdown-item" href="#">Выбранный пункт</a></li>
+                                <li><a class="dropdown-item" href="#">Теорема Эскобара</a></li>
+                            </ul>
+                        </div>
+                        <!-- dropdown -->
+                    </div>
+                    <!-- /.droplist -->
+                    <div class="buttons">
+                        <h3 class="ui__subtitle h3">Кнопка</h3>
+                        <div class="buttons-menu row">
+                            <div class="buttons-menu__wrapper col-lg-4 col-sm-6 col-12">
+                                <button class="buttons-menu__wrapper-button main-p">Отправить</button>
+                            </div>
+                            <div class="buttons-menu__wrapper col-lg-4 col-sm-6 col-12">
+                                <span class="buttons-menu__wrapper-hint alt-text">Ховер</span>
+                                <button class="buttons-menu__wrapper-button buttons-menu__wrapper-button--2 main-p">Отправить</button>
+                            </div>
+                            <div class="buttons-menu__wrapper col-lg-4 col-sm-6 col-12">
+                                <span class="buttons-menu__wrapper-hint alt-text">Нажатие</span>
+                                <button class="buttons-menu__wrapper-button buttons-menu__wrapper-button--3 main-p">Отправить</button>
+                            </div>
+                            <div class="buttons-menu__wrapper buttons-menu__wrapper--last col-lg-4 col-sm-6 col-12">
+                                <span class="buttons-menu__wrapper-hint alt-text">Неактивна</span>
+                                <button class="buttons-menu__wrapper-button buttons-menu__wrapper-button--last main-p">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.buttons -->
+                    <div class="checkbox">
+                        <h3 class="ui__subtitle h3">Чекбокс, радиобаттон</h3>
+                        <div class="checkbox-wrapper row">
+                            <div class="checkbox-wrapper__mark col-lg-6 col-sm-6 col-12">
+                                <div class="form-check form-check-space">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+                                    <label class="form-check-label" for="flexCheckDefault">Выбери меня</label>
+                                  </div>
+                                <div class="form-check form-check-space">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">Выбери меня</label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">Птица счастья завтрашнего дня</label>
+                                </div>
+                            </div>
+                            <!-- /.checkbox-wrapper__mark -->
+                            <div class="checkbox-wrapper__radio col-lg-6 col-sm-6 col-12">
+                                <div class="form-check form-check-space">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">Пластмассовый мир победил</label>
+                                  </div>
+                                  <div class="form-check form-check-space">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">Макет оказался сильней</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">Последний кораблик остыл</label>
+                                  </div>
+                            </div>
+                            <!-- /.checkbox-wrapper__radio -->
+                        </div>
+                        <!-- /.checkbox-wrapper -->
+                    </div>
+                    <!-- /.checkbox -->
+                    <div class="accordion">
+                        <h3 class="ui__subtitle h3">Аккордеон</h3>
+                        <div class="accordion-wrapper">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Аккордеон</button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body row">
+                                    <p class="accordion-description main-p col-lg-6 col-sm-6 col-12">Гоpдость полными вагонами золотыми погонами
+                                        С юга дyют молодые вет…
+                                        Pазpывая в клочья облака не забыли шлют из далека
+                                        С дома мама И не последняя любовь
+                                        А по небy бегyт видишь чьи-то следы
+                                        Это может быть ты это может быть я
+                                        Это может наш дрyг
+                                        Это может нам поют свои</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Аккордеон</button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body row">
+                                    <p class="accordion-description main-p col-lg-6 col-sm-6 col-12">Гоpдость полными вагонами золотыми погонами
+                                        С юга дyют молодые вет…
+                                        Pазpывая в клочья облака не забыли шлют из далека
+                                        С дома мама И не последняя любовь
+                                        А по небy бегyт видишь чьи-то следы
+                                        Это может быть ты это может быть я
+                                        Это может наш дрyг
+                                        Это может нам поют свои</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Аккордеон</button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body row">
+                                    <p class="accordion-description main-p col-lg-6 col-sm-6 col-12">Гоpдость полными вагонами золотыми погонами
+                                        С юга дyют молодые вет…
+                                        Pазpывая в клочья облака не забыли шлют из далека
+                                        С дома мама И не последняя любовь
+                                        А по небy бегyт видишь чьи-то следы
+                                        Это может быть ты это может быть я
+                                        Это может наш дрyг
+                                        Это может нам поют свои</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- /.accordion -->
+                    <div class="end">
+                        <span class="end-text alt-text">Победа! 😜</span>
+                    </div>
                 </div>
                 <!-- ui -->
             </div>
@@ -207,8 +383,9 @@
         <!-- /.container -->
     </div>
     <!-- /.content -->
-    
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/src/js/menu.js"></script> -->
+    <script src="src/js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="src/js/bootstrap.min.js"></script> -->
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/droplist.js"></script>
 </body>
 </html>
