@@ -543,7 +543,6 @@ template {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
-  border: 2px solid red;
 }
 
 .modal-window--visible {
@@ -558,7 +557,6 @@ template {
 }
 
 .modal-wrapper {
-  border: 2px solid blue;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -575,6 +573,7 @@ template {
   top: 28px;
   right: 60px;
   position: absolute;
+  cursor: pointer;
 }
 
 .modal-menu {
@@ -860,15 +859,17 @@ template {
 }
 
 .typography-links__button {
+  background: none;
+  border: none;
   text-decoration: none;
   color: #7D7D7D;
   margin-right: 32px;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
 }
 
 .typography-links__button:hover {
   color: #1B1B1B;
-  padding-bottom: 5px;
   border-bottom: 2px solid #3E29E3;
 }
 
@@ -916,6 +917,11 @@ template {
 
 .typography-menu__wrapper-param {
   color: #7D7D7D;
+}
+
+.selected {
+  color: #1B1B1B;
+  border-bottom: 2px solid #3E29E3;
 }
 
 .ui {
@@ -1058,6 +1064,10 @@ template {
           transition-duration: .5s;
 }
 
+.dropdown {
+  margin-bottom: 0;
+}
+
 .dropdown-menu {
   border: none;
   width: 92%;
@@ -1179,6 +1189,10 @@ template {
   margin-bottom: 64px;
 }
 
+.checkbox-wrapper__mark {
+  margin-bottom: 0px;
+}
+
 .form-check-space {
   margin-bottom: 24px;
 }
@@ -1195,24 +1209,39 @@ template {
   border: none;
 }
 
+.accordion-header {
+  border-bottom: 1px solid #7D7D7D;
+}
+
+.accordion-header:hover {
+  border-bottom: 1px solid #3E29E3;
+}
+
 .accordion-button {
   padding-left: 0;
   padding-right: 0;
-  color: #1B1B1B;
+  color: #7D7D7D;
   font-family: "graphic-medium";
 }
 
+.accordion-button:hover {
+  color: #1B1B1B;
+}
+
 .accordion-button:focus {
-  color: #3E29E3;
   background-color: none;
   font-family: "graphic-medium";
   color: #1B1B1B;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .accordion-button:not(.collapsed) {
   background-color: #fff;
   color: #3E29E3;
   font-family: "graphic-medium";
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .accordion-button:not(.collapsed):after {
@@ -1222,7 +1251,6 @@ template {
 }
 
 .accordion-button:after {
-  border: none;
   background-image: url(/src/img/arrow.svg);
   color: #3E29E3;
   font-family: "graphic-medium";
@@ -1236,7 +1264,6 @@ template {
 
 .accordion-body {
   padding-bottom: 30px;
-  border-top: 1px solid #3E29E3;
   border-bottom: 2px solid #3E29E3;
   width: 100%;
   padding-left: 0px;
@@ -1291,6 +1318,18 @@ template {
   .modal-menu__icon {
     margin: 24px 32px 0px 32px;
   }
+  .ui-forms {
+    margin-bottom: 30px;
+  }
+  .ui-forms__last {
+    margin-top: 0px;
+  }
+  .dropdown {
+    margin-bottom: 30px;
+  }
+  .dropdown-3 {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1328,7 +1367,7 @@ template {
     width: 320px;
   }
   .modal-menu {
-    max-width: 250px;
+    max-width: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1336,6 +1375,9 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .modal-menu__icon {
+    margin-top: 10px;
   }
   .modal-menu__main {
     height: 100%;
@@ -1350,16 +1392,28 @@ template {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
   }
   .modal-menu__main-description {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
   .modal-close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     right: 20px;
-  }
-  .social {
-    margin-bottom: 170px;
+    height: 30px;
+    width: 30px;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    background: #3E29E3;
+    border-radius: 50%;
   }
   .social-btn {
     width: 48px;
@@ -1413,7 +1467,10 @@ template {
             flex-direction: column;
   }
   .buttons-menu__wrapper--last {
-    margin-top: 0;
+    margin-top: 15px;
+  }
+  .checkbox-wrapper__mark {
+    margin-bottom: 30px;
   }
   .h1 {
     font-size: 32px;

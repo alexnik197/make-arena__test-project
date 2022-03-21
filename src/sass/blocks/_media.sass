@@ -20,6 +20,15 @@
             width: 500px
             &__icon
                 margin: 24px 32px 0px 32px
+    .ui
+        &-forms
+            margin-bottom: 30px
+            &__last
+                margin-top: 0px
+    .dropdown
+        margin-bottom: 30px
+        &-3
+            margin-bottom: 0
 @media (max-width: 768px)
     .header
         &-wrapper
@@ -45,22 +54,32 @@
         &-window
             width: 320px
         &-menu
-            max-width: 250px
+            max-width: 100vh
             display: flex
             flex-direction: column
+            &__icon
+                margin-top: 10px
             &__main
                 height: 100%
                 display: flex
                 flex-direction: column
                 align-items: center
                 margin-top: 20px
-                padding-bottom: 0px
+                padding-bottom: 20px
                 &-description
-                    margin-bottom: 26px
+                    margin-bottom: 20px
         &-close
+            display: flex
+            justify-content: center
+            align-items: center
             right: 20px
+            height: 30px
+            width: 30px
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08)
+            background: #3E29E3
+            border-radius: 50%
+
     .social
-        margin-bottom: 170px
         &-btn
             width: 48px
             height: 48px
@@ -88,7 +107,11 @@
                 display: flex
                 flex-direction: column
                 &--last
-                    margin-top: 0
+                    margin-top: 15px
+    .checkbox
+        &-wrapper
+            &__mark
+                margin-bottom: 30px
     .h1
         font-size: 32px
         line-height: 40px

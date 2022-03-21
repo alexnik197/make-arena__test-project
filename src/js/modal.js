@@ -1,5 +1,5 @@
 let modalButton = $("[data-toggle=modal]");
-let closeModalButton = $(".modal-close__button");
+let closeModalButton = $(".modal-close");
 modalButton.on("click", openModal);
 closeModalButton.on("click", closeModal);
 

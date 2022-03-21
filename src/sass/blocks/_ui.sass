@@ -68,6 +68,7 @@
             border-bottom: 4px solid #3E29E3
             transition-duration: .5s
 .dropdown
+    margin-bottom: 0
     &-menu
         border: none
         width: 92%
@@ -136,6 +137,9 @@
 
 .checkbox
     margin-bottom: 64px
+    &-wrapper
+        &__mark
+            margin-bottom: 0px
 .form-check
     &-space
         margin-bottom: 24px
@@ -147,26 +151,33 @@
     margin-bottom: 160px
     &-item
         border: none
+    &-header
+        border-bottom: 1px solid $font-gray
+        &:hover
+            border-bottom: 1px solid #3E29E3
+
     &-button
         padding-left: 0
         padding-right: 0
-        color: $font-black
+        color: $font-gray
         font-family: "graphic-medium"
+        &:hover
+            color: $font-black
         &:focus
-            color: #3E29E3
             background-color: none
             font-family: "graphic-medium"
             color: $font-black
+            box-shadow: none
         &:not(.collapsed)
             background-color: #fff
             color: #3E29E3
             font-family: "graphic-medium"
+            box-shadow: none
             &:after
                 background-image: url(/src/img/arrow.svg)
                 color: #3E29E3
                 font-family: "graphic-medium"
         &:after
-            border: none
             background-image: url(/src/img/arrow.svg)
             color: #3E29E3
             font-family: "graphic-medium"
@@ -176,7 +187,6 @@
             font-family: "graphic-medium"
     &-body
         padding-bottom: 30px
-        border-top: 1px solid #3E29E3
         border-bottom: 2px solid #3E29E3
         width: 100%
         padding-left: 0px
